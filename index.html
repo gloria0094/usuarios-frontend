@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <title>Conecta</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand sticky-top">
+        <div class="container">
+            <a class="navbar-brand marca" href="index.html"><i class="bi bi-people-fill"></i> Conecta</a>
+            <ul class="nav nav-pills gap-1">
+                <li class="nav-item"><a class="nav-link " href="registro.html"><i class="bi bi-person-plus"></i> <span class="d-none d-sm-inline">Crear cuenta</span></a></li>
+                <li class="nav-item"><a class="nav-link " href="busqueda.html"><i class="bi bi-search"></i> <span class="d-none d-sm-inline">Buscar</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="hero text-center py-5 my-lg-5">
+            <span class="badge rounded-pill text-bg-dark border mb-3 px-3 py-2">
+                <i class="bi bi-hexagon"></i> Spring Boot · Arquitectura Hexagonal
+            </span>
+            <h1 class="mb-3">Encuentra a tu <span class="resalte">gente</span></h1>
+            <p class="lead text-secondary mb-4 mx-auto" style="max-width: 560px">
+                Crea tu cuenta y busca a otras personas por su nombre, apellidos o usuario.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="registro.html" class="btn btn-degradado btn-lg px-4 rounded-pill">
+                    <i class="bi bi-person-plus"></i> Crear cuenta
+                </a>
+                <a href="busqueda.html" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                    <i class="bi bi-search"></i> Buscar personas
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3 mt-5">
+        <span id="pie"></span>
+    </footer>
+    <script src="js/config.js"></script>
+</body>
+</html>

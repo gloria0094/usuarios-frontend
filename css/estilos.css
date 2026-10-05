@@ -1,0 +1,163 @@
+/* ====== Tema "Conecta" (oscuro con acento violeta/rosa) ====== */
+:root {
+    --violeta: #8b5cf6;
+    --rosa: #ec4899;
+    --degradado: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+    --fondo: #0f0f1a;
+    --tarjeta: #1a1a2e;
+    --borde: #2c2c48;
+    --texto-suave: #a5a5c0;
+}
+
+body {
+    font-family: "Poppins", system-ui, sans-serif;
+    background: var(--fondo);
+    background-image: radial-gradient(circle at 15% 10%, rgba(139, 92, 246, .18), transparent 40%),
+                      radial-gradient(circle at 85% 90%, rgba(236, 72, 153, .12), transparent 40%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1; }
+
+/* ---- Navbar ---- */
+.navbar {
+    background: rgba(15, 15, 26, .85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--borde);
+}
+.marca {
+    font-weight: 700;
+    font-size: 1.4rem;
+    background: var(--degradado);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+.nav-pills .nav-link {
+    color: var(--texto-suave);
+    border-radius: 50rem;
+    padding: .35rem 1rem;
+}
+.nav-pills .nav-link.active {
+    background: var(--degradado);
+    color: #fff;
+}
+
+/* ---- Botones ---- */
+.btn-degradado {
+    background: var(--degradado);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+.btn-degradado:hover, .btn-degradado:focus {
+    color: #fff;
+    filter: brightness(1.1);
+}
+.btn-degradado:disabled { opacity: .7; color: #fff; }
+
+/* ---- Tarjetas ---- */
+.tarjeta {
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.panel-lateral {
+    background: var(--degradado);
+    color: #fff;
+    padding: 2.5rem 2rem;
+}
+.panel-lateral li { margin-bottom: .6rem; }
+.panel-lateral i { margin-right: .4rem; }
+
+.form-control, .input-group-text {
+    background: #131325;
+    border-color: var(--borde);
+}
+.form-control:focus {
+    background: #131325;
+    border-color: var(--violeta);
+    box-shadow: 0 0 0 .2rem rgba(139, 92, 246, .25);
+}
+.input-group-text { color: var(--violeta); }
+
+/* ---- Inicio ---- */
+.hero h1 {
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+}
+.hero .resalte {
+    background: var(--degradado);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ---- Buscador ---- */
+.buscador {
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 50rem;
+    padding: .4rem .4rem .4rem 1.2rem;
+}
+.buscador input {
+    background: transparent;
+    border: none;
+    box-shadow: none !important;
+}
+.buscador input:focus { background: transparent; }
+.buscador .btn { border-radius: 50rem; padding: .5rem 1.4rem; }
+
+.persona {
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    height: 100%;
+    transition: transform .15s, border-color .15s;
+}
+.persona:hover {
+    transform: translateY(-3px);
+    border-color: var(--violeta);
+}
+.avatar {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto .7rem;
+    border-radius: 50%;
+    background: var(--degradado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+}
+.persona .arroba {
+    display: inline-block;
+    margin-top: .3rem;
+    padding: .1rem .7rem;
+    border-radius: 50rem;
+    background: rgba(139, 92, 246, .15);
+    color: #c4b5fd;
+    font-size: .85rem;
+}
+.persona mark {
+    background: rgba(236, 72, 153, .35);
+    color: inherit;
+    padding: 0 1px;
+    border-radius: 3px;
+}
+.vacio { color: var(--texto-suave); }
+.vacio i { font-size: 2.5rem; }
+
+footer {
+    color: var(--texto-suave);
+    font-size: .85rem;
+    border-top: 1px solid var(--borde);
+}
